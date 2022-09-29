@@ -1,0 +1,5 @@
+/target
+
+# local configuration files
+.env
+/config.*

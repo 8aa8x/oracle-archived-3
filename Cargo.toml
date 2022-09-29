@@ -1,0 +1,26 @@
+[package]
+name = "oracle"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+config = "0.13"
+serde = "1.0"
+serde_derive = "1.0"
+nanoid = "0.4"
+signal-hook = "0.3"
+hex-literal = "0"
+thiserror = "1.0"
+anyhow = "1.0"
+lazy_static = "1.4"
+futures = "0.3.24"
+async-trait = "0.1.57"
+slog = "2.7.0"
+slog-async = "2.7.0"
+slog-term = "2.9.0"
+web3 = "0.17"
+rslock = "0.0.4"
+tokio = { version = "1", features = ["rt", "rt-multi-thread", "macros", "time"] }
+sqlx = { version = "0.6", features = ["runtime-tokio-rustls", "postgres"] }
